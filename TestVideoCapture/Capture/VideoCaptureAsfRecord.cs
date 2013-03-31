@@ -75,7 +75,7 @@ namespace TestVideoCapture.Capture
             CheckHr(hr, "Can't add ASF Writer");
             //configure asf writer with a profile
 
-            var filePath = ConfigurationManager.AppSettings["qualityFilePath"];
+            var filePath = @".\Qualities\good.prx";
 
             ConfigProfileFromFile(asfWriterF, filePath);
 
@@ -141,8 +141,6 @@ namespace TestVideoCapture.Capture
             int hr;
             //string profilePath = "test.prx";
             // Set the profile to be used for conversion
-
-
 
 
             if ((filename != null) && (File.Exists(filename)))
